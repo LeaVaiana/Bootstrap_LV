@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Bootstrap Grid System</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style type="text/css">
+        .pink {
+            background: pink;
+            border: 1px solid purple;
+        }
+        .orange {
+            background:  orange;
+            border: 1px solid purple;
+        }
+        </style>
+    
+    </head>
+    <body>
+        <p>Two boxes of 6 units inside the container</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pink">COLUMN LG 6</div>
+                <div class="col-lg-6 pink">COLUMN LG 6</div>
+            </div>
+        </div>
+<br>
+        <p>3 boxes of different units inside the container</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 pink">COLUMN LG 2</div>
+                <div class="col-lg-8 pink">COLUMN LG 8</div>
+                <div class="col-lg-2 pink">COLUMN LG 2</div>
+            </div>
+        </div>
+<br>
+        <p>If we want to mantain 4 columns for lg and md devices, not needed to specify it twice like that: class="col-lg-3 col-md-3 pink"</p>
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3 pink">COLUMN LG 1</div>
+                    <div class="col-md-3 pink">COLUMN LG 1</div>
+                    <div class="col-md-3 pink">COLUMN LG 1</div>
+                    <div class="col-md-3 pink">COLUMN LG 1</div>
+                </div>
+            </div>
+<br>
+        <p>4 columns for lg devices, 2 columns for md devices, 1 column for sm devices</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 pink">COLUMN LG 1</div>
+                <div class="col-lg-3 col-md-6 col-sm-6 pink">COLUMN LG 1</div>
+                <div class="col-lg-3 col-md-6 col-sm-6 pink">COLUMN LG 1</div>
+                <div class="col-lg-3 col-md-6 col-sm-6 pink">COLUMN LG 1</div>
+            </div>
+        </div>
+<br>
+        <p>Nesting Grid</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 pink">
+                    <div class="row">
+                        <div class="col-lg-6 orange">1st half</div>
+                        <div class="col-lg-6 orange">2nd half</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 pink">COLUMN LG 1</div>
+                <div class="col-md-3 col-sm-6 pink">COLUMN LG 1</div>
+                <div class="col-md-3 col-sm-6 pink">COLUMN LG 1</div>
+            </div>
+        </div>
+
+
+        
+
+ 
+    </body>
+</html>
